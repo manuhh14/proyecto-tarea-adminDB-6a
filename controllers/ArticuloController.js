@@ -11,13 +11,15 @@ const crear = async (req, res )=>{
     
     let parametros = req.body;
 
+    
+
     ///validar que los parametros existen
-    if (!parametros || !parametros.titulo || !parametros.contenido){
+    /*if (!parametros.titulo || !parametros.contenido){
         return res.status(400).json({
             status:"Error",
             mensaje: "Faltan datos necesarios: titulo y contenido"
         });
-    }
+    }*/
 
     ////Crear objeto
     try {

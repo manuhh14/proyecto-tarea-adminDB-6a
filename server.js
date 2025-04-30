@@ -13,7 +13,8 @@ const app = express();
 const puerto= 3900;
 
 app.use(cors());
-app.use(express());
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
 
 app.get("/", (req, res)=>{
     return res.status(200).json([{
